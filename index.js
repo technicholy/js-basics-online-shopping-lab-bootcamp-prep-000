@@ -16,7 +16,7 @@ function addToCart(item) {
  kart.itemName = item
  kart.itemPrice = getRandomInt(100)
  cart.push(kart)
- return `${item} has been added.`
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
