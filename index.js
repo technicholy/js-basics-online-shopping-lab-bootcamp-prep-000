@@ -31,6 +31,7 @@ function viewCart() {
     var retStr = "In your cart, you have "
     while (cart.length > 0){
       retStr += ` ${cart[0].itemName} at \$${cart[0].itemPrice},}`
+      cart.shift()
     }
     retStr += `and, ${lastItem}`
     return retStr
