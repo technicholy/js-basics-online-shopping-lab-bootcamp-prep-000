@@ -36,6 +36,7 @@ function total() {
   cart.forEach(function(item){
     price += item.itemPrice
   })
+  return price
 }
 
 function removeFromCart(item) {
