@@ -28,12 +28,8 @@ function viewCart() {
     return `In your cart, you have ${cart[0].itemName} at \$${cart[0].itemPrice}, and ${cart[1].itemName} at \$${cart[1].itemPrice}.`
   }else{
     var lastItem = cart.pop();
-    var retStr = '';
-    while (cart.length > 0){
-      retStr = retStr + `${cart[0].itemName} at \$${cart[0].itemPrice}, `;
-      cart.shift();
+    return `In your cart, you have ${cart.join(', ')}, and ${lastItem}`    
     }
-    return `In your cart, you have ${retStr} and ${lastItem}.`
   }
 }
 
