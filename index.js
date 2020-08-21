@@ -30,7 +30,6 @@ function viewCart() {
     var lastItem = cart.pop();
     return `In your cart, you have ${cart.join(', ')}, and ${lastItem}`
     }
-  }
 }
 
 function total() {
