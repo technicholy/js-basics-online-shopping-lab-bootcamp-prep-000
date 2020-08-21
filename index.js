@@ -28,7 +28,7 @@ function viewCart() {
     return `In your cart, you have ${cart[0].itemName} at \$${cart[0].itemPrice}, and ${cart[1].itemName} at \$${cart[1].itemPrice}.`
   }else{
     var lastItem = cart.pop()
-    retStr = ''
+    var retStr = ''
     while (cart.length > 0){
       retStr = retStr.concat(`${cart[0].itemName} at \$${cart[0].itemPrice}, `);
       cart.shift()
