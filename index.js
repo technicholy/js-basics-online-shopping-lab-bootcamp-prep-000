@@ -30,7 +30,7 @@ function viewCart() {
     lastItem = cart.pop()
     retStr = "In your cart, you have "
     while (cart.length > 0){
-      retStr += ` ${cart[0].itemName at \$${cart[0].itemPrice},}`
+      retStr += ` ${cart[0].itemName} at \$${cart[0].itemPrice},}`
     }
     retStr += `and, ${lastItem}`
     return retStr
