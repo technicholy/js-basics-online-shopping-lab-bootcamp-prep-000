@@ -10,7 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+ var kart = {}
+ kart.itemName = item
+ kart.itemPrice = Math.floor(Math.Random(1, 100))
 }
 
 function viewCart() {
