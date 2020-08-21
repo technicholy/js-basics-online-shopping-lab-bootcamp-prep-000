@@ -15,7 +15,7 @@ function addToCart(item) {
  var kart = {}
  kart.itemName = item
  kart.itemPrice = getRandomInt(100)
- 
+
 }
 
 function viewCart() {
