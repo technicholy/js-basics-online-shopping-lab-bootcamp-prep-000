@@ -30,7 +30,7 @@ function viewCart() {
     var lastItem = cart.pop()
     var retStr = ''
     while (cart.length > 0){
-      retStr = retStr.concat(`${cart[0].itemName} at \$${cart[0].itemPrice}, `);
+      retStr = retStr.concat(`${cart[0][itemName]} at \$${cart[0][itemPrice]}, `);
       cart.shift()
     }
     return `In your cart, you have ${retStr} and ${lastItem}.`
