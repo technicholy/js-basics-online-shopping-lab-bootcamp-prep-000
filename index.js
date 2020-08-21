@@ -20,7 +20,11 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length === 0){
+    return "Your shopping cart is empty."
+  }else if(cart.length === 1){
+    return `In your cart, you have ${cart[1].itemName} at \$${cart[1].itemPrice}`    
+  }
 }
 
 function total() {
