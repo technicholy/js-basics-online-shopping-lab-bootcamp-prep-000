@@ -27,14 +27,7 @@ function viewCart() {
   }else if(cart.length === 2){
     return `In your cart, you have ${cart[0].itemName} at \$${cart[0].itemPrice}, and ${cart[1].itemName} at \$${cart[1].itemPrice}.`
   }else{
-    var lastItem = cart.pop()
-    var retStr = "In your cart, you have "
-    while (cart.length > 0){
-      retStr += ` ${cart[0].itemName} at \$${cart[0].itemPrice},}`
-      cart.shift()
-    }
-    retStr += `and, ${lastItem}`
-    return retStr
+    return `In your cart, you have ${cart[0].itemName} at \$${cart[0].itemPrice}, ${cart[1].itemName} at \$${cart[1].itemPrice}, and ${cart[2].itemName} at \$${cart[2].itemPrice}.`
     }
 }
 
