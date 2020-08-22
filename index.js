@@ -40,8 +40,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart.includes(`{itemName:${name}}`)){
-    cart.slice(2, 1)
+  if (cart.includes(item)){
+    cart = 0
     }
   else{
     return "That item is not in your cart."
