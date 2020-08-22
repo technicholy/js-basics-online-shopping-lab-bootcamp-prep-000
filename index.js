@@ -41,8 +41,7 @@ function total() {
 
 function removeFromCart(item) {
   if (cart.includes(item)){
-    console.log('Included');
-    cart.splice(cart.indexOf(item))
+    cart.splice(cart.indexOf(item), 1)
   }else{
     return "That item is not in your cart."
   }
