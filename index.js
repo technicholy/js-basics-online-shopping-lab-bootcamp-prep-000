@@ -40,7 +40,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart.includes(`itemName:${name}`)){
+  if (cart.includes(`{itemName:${name}}`)){
     cart.slice(2, 1)
     }
   else{
