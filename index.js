@@ -40,11 +40,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  const retCart = cart.filter(element => element.hasOwnProperty(item));
+  const retCart = cart.filter(element => !element.hasOwnProperty(item));
   if (retCart.length === cart.length){
     return "That item is not in your cart."
   }
-  var cart = retCart
+  cart = retCart
 }
 function placeOrder(cardNumber) {
   // write your code here
