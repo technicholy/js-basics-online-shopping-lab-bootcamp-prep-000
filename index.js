@@ -40,11 +40,14 @@ function total() {
 }
 
 function removeFromCart(item) {
-  const retCart = cart.filter(element => !element.itemName===item);
-  if (retCart.length === cart.length){
-    return "That item is not in your cart."
+  for (let i = 0; i< cart.length; i++){
+    if (cart[i].hasOwnProperty(item)){
+      cart.splice([i], 1)
+      return cart
+    }
   }
-  return retCart
+  print 'That item is not in your cart.'
+  return cart
 }
 function placeOrder(cardNumber) {
   // write your code here
