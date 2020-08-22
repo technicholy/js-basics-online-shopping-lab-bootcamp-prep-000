@@ -40,12 +40,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart.includes(item)){
-    cart.pop()
-    }
-  else{
-    return "That item is not in your cart."
-  };
+  cart.splice(cart.indexOf(item), 1)
 }
 function placeOrder(cardNumber) {
   // write your code here
