@@ -40,7 +40,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  cart.splice(cart.indexOf(item), 1)
+  cart = ['cart']
 }
 function placeOrder(cardNumber) {
   // write your code here
