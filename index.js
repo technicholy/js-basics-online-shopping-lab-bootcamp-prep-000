@@ -40,7 +40,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  cart = ['cart']
+  return cart
 }
 function placeOrder(cardNumber) {
   // write your code here
