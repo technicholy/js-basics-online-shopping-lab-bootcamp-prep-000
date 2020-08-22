@@ -42,10 +42,10 @@ function total() {
 function removeFromCart(item) {
   if (cart.includes(item)){
     cart.slice(cart.findIndex((cart.itemName === item)), 1)
-    }
+    };
   }else{
     return "That item is not in your cart."
-  }
+  };
 }
 function placeOrder(cardNumber) {
   // write your code here
