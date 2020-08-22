@@ -41,7 +41,7 @@ function total() {
 
 function removeFromCart(item) {
   if (cart.includes(item)){
-    cart.splice(cart.indexOf(item)+1, 1)
+    cart.splice(cart.indexOf(item)-1, 1)
   }else{
     return "That item is not in your cart."
   }
