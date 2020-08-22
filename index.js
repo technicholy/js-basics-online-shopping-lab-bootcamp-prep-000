@@ -44,7 +44,7 @@ function removeFromCart(item) {
   if (retCart.length === cart.length){
     return "That item is not in your cart."
   }
-  cart = retCart
+  return retCart
 }
 function placeOrder(cardNumber) {
   // write your code here
